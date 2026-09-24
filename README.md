@@ -146,7 +146,7 @@ The offline suite also covers overview routing, full-document fallback, summary 
 
 ## Submission deliverables
 
-- Source code: this directory, ready to push to a GitHub repository you own; no repository URL has been created.
+- Source code: [github.com/Izharullah733/Pdf-Evidence-RAG](https://github.com/Izharullah733/Pdf-Evidence-RAG).
 - Architecture diagram: `docs/architecture.svg` and the Mermaid source above.
 - Four-page technical report: `docs/technical_report.pdf`, reproducible from Markdown.
 - Demo: sample PDF and a timed 6-minute script; record the actual working app to produce the required 5–7 minute video.
