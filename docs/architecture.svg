@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="810" viewBox="0 0 1100 810">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect width="1100" height="810" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#172033">
+<text x="55" y="55" font-size="30" font-weight="bold">PDF Evidence · Pinecone RAG</text>
+<text x="55" y="87" font-size="16">Page-preserving ingestion, document summaries and source-backed answers</text>
+<g fill="#e8eef7" stroke="#a5b4cf" stroke-width="1.5">
+<rect x="55" y="130" width="285" height="85" rx="12"/><rect x="405" y="130" width="285" height="85" rx="12"/><rect x="755" y="130" width="285" height="85" rx="12"/>
+<rect x="755" y="290" width="285" height="85" rx="12"/><rect x="405" y="290" width="285" height="85" rx="12"/><rect x="55" y="290" width="285" height="85" rx="12"/>
+<rect x="55" y="450" width="285" height="85" rx="12"/><rect x="405" y="450" width="285" height="85" rx="12"/><rect x="755" y="450" width="285" height="85" rx="12"/>
+<rect x="755" y="630" width="285" height="105" rx="12" fill="#dcfce7"/><rect x="405" y="630" width="285" height="105" rx="12" fill="#fef3c7"/>
+</g>
+<g text-anchor="middle" font-size="18" font-weight="bold">
+<text x="197" y="164">PDF upload</text><text x="547" y="164">Extract + clean</text><text x="897" y="164">Chunk by page + tokens</text>
+<text x="897" y="324">MiniLM embeddings</text><text x="547" y="324">Pinecone vector index</text><text x="197" y="324">Question + filters</text>
+<text x="197" y="484">Embed query</text><text x="547" y="484">Semantic retrieval</text><text x="897" y="484">Groq answer + evidence</text>
+<text x="897" y="665">Quote + support checks</text><text x="547" y="665">Abstain</text>
+</g>
+<g text-anchor="middle" font-size="14">
+<text x="197" y="192">Multiple files · 20 MB each</text><text x="547" y="192">pypdf · physical page references</text><text x="897" y="192">Sentence preference + overlap</text>
+<text x="897" y="352">384 dimensions · normalized</text><text x="547" y="352">Cosine · namespace · metadata</text><text x="197" y="352">Document/page · threshold · top-k</text>
+<text x="197" y="512">Same local embedding model</text><text x="547" y="512">Top-k passages above threshold</text><text x="897" y="512">Untrusted context · JSON only</text>
+<text x="897" y="691">Answer + excerpt + page reference</text><text x="897" y="714">Otherwise return required fallback</text>
+<text x="547" y="691">No sufficient or valid evidence</text><text x="547" y="714">No unsupported answer text</text>
+</g>
+<g fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)">
+<path d="M340 172 H398"/><path d="M690 172 H748"/><path d="M897 215 V283"/><path d="M755 332 H697"/>
+<path d="M197 375 V443"/><path d="M340 492 H398"/><path d="M547 450 V382"/><path d="M575 375 V443"/>
+<path d="M690 492 H748"/><path d="M897 535 V623"/><path d="M547 535 V623"/><path d="M755 682 H697"/>
+<path d="M547 215 V250 H1070 V492 H1047" stroke-dasharray="5 4"/>
+</g>
+<text x="566" y="594" font-size="13">No context</text>
+<text x="595" y="242" font-size="12">Summary / full-text path (respects document and page filters)</text>
+<text x="55" y="777" font-size="14">Automatic: full small documents, batched overviews, expanded weak searches. Strict: similarity threshold only.</text>
+</g></svg>
